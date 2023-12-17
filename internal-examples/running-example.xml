@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns/graphml"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns/graphml">
+<key id="nb_inter" for="graph">
+<desc>default number of interpretations (same for all agents)</desc>
+<default>16</default>
+</key>
+<key id="rp" for="graph">
+<desc>revision policy (same for all agents)</desc>
+<default>Boutilier</default>
+</key>
+<key id="b" for="node">
+<desc>belief (represented as an OCF)</desc>
+<default>0</default>
+</key>
+<key id="x" for="node">
+<desc>x_position</desc>
+<default>0</default>
+</key>
+<key id="y" for="node">
+<desc>y_position</desc>
+<default>0</default>
+</key>
+<key id="id_nb" for="node">
+<desc>id number</desc>
+<default>0</default>
+</key>
+<graph edgedefault="directed">
+<data key="nb_inter">4</data>
+<data key="rp">One-Improvement</data>
+<node id="UIAgent 1 (belief = [0, 2])">
+<data key="b">0 1 0 1</data>
+<data key="x">248.79447817054017</data>
+<data key="y">261.68209455419344</data>
+<data key="id_nb">1</data>
+</node>
+<node id="UIAgent 0 (belief = [0/1])">
+<data key="b">0 0 1 1</data>
+<data key="x">376.7772137057209</data>
+<data key="y">89.61775148243854</data>
+<data key="id_nb">0</data>
+</node>
+<node id="UIAgent 2 (belief = [2/3])">
+<data key="b">1 1 0 0</data>
+<data key="x">482.8128870132872</data>
+<data key="y">258.74789013252723</data>
+<data key="id_nb">2</data>
+</node>
+<edge source="UIAgent 0 (belief = [0/1])" target="UIAgent 2 (belief = [2/3])"/>
+<edge source="UIAgent 0 (belief = [0/1])" target="UIAgent 1 (belief = [0, 2])"/>
+<edge source="UIAgent 1 (belief = [0, 2])" target="UIAgent 2 (belief = [2/3])"/>
+<edge source="UIAgent 2 (belief = [2/3])" target="UIAgent 0 (belief = [0/1])"/>
+</graph>
+</graphml>
