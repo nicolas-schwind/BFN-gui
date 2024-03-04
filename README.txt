@@ -1,7 +1,10 @@
 This software program consists of a user-friendly graphical interface that allows users to run instances of Belief Flow Networks (BFNs), a framework for representing how logical beliefs spread among interacting agents within a network. In a BFN, agents communicate asynchronously. The agents' beliefs are represented using epistemic states, which encompass their current beliefs and conditional beliefs guiding future changes. When communication occurs between two connected agents, the receiving agent changes its epistemic state using an improvement operator, a well-known type of rational iterated belief change operator that generalizes belief revision operators. The software program can be used to generate various types of network structures (random, line, loop, Barabasi-Albert preferential incluence graphs, Kleinberg small world graphs) and simulate the propagation of beliefs within these networks.
 
 Reference of the related paper:
-Nicolas Schwind, Katsumi Inoue, Sébastien Konieczny, Pierre Marquis: BeliefFlow: A Framework for Logic-Based Belief Diffusion via Iterated Belief Change. In Proceedings of AAAI'24.
+- Nicolas Schwind, Katsumi Inoue, Sébastien Konieczny, Pierre Marquis: BeliefFlow: A Framework for Logic-Based Belief Diffusion via Iterated Belief Change. In Proceedings of AAAI'24.
+
+Full version of the paper including the proofs of all propositions:
+- https://nicolas-schwind.github.io/SIKM-AAAI24-proofs.pdf
 
 You must have a Java Runtime Environment installed to run the software program. To launch:
 > java -jar bfn-gui.jar
